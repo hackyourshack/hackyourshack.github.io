@@ -23,7 +23,7 @@ export const Header: React.FC<Props> = ({ className }) => {
         <div className={styles.links}>
           <Link href="/storage">
             <a className={styles.link}>
-              <Icon icon="hammer" title="Storage" />
+              <Icon icon="tools" title="Storage" />
             </a>
           </Link>
           <Link href="/community">

@@ -12,7 +12,6 @@ export const Footer: React.FC<Props> = ({ className }) => {
         <p>Powered by Good Spirit!</p>
       </Link>
       <p>
-        <Icon icon="font-awesome-flag" />
         Icons by
         <a target="_blank" href="https://fontawesome.com/">
           FontAwesome
