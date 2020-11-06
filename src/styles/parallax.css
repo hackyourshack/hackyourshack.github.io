@@ -1,0 +1,24 @@
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 1.5px;
+  perspective-origin: center top;
+  transform-style: preserve-3d;
+}
+
+.parallax-bg {
+  height: 95vh;
+  overflow-x: hidden;
+  perspective: 2px;
+  perspective-origin: center top;
+  transform-style: preserve-3d;
+  position: relative;
+  vertical-align: top;
+  transform-origin: center top;
+  transform: translateZ(-1px) scale(2);
+}
+
+/* The styling for the static div. */
+.parallax-fg {
+  transform: translateZ(0px);
+}
