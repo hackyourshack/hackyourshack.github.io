@@ -72,3 +72,69 @@ The different sections (storage, magazine, handbook, events) can have different 
       - statics.md
       - bricks.md
   - events
+
+## Hosting
+
+Options
+
+- Vercel/Next.js
+- AWS: Amplify?
+- GCP: Google App Engine
+
+## Style
+
+### Popular Examples
+
+- m.youtube.com
+- chefkoch.de
+- airbnb.com
+- google.com
+- facebook.com
+- uber.com
+- unsplash.com
+
+### Goals
+
+- have much screen space for content
+- colorful, lively, nevertheless clear visuals
+- lots of photo and video footage
+- fun to use intuitive controls
+  - should look great over images
+  - should still be well recognizable over text
+
+### Controls
+
+- Section switcher
+- Search bar
+
+## Page Structure
+
+- Global
+  - Logo
+    - top-left corner
+    - transparent
+    - always in screen or scroll out?
+    - function: Goto landing-page or open app-bar?
+  - Section Switcher
+    - bottom-right corner
+- Landing Page
+  - Top
+    - Full size picture with slogan of the day
+    - Parallax scrolling into content (with scroll button)
+  - Content
+    - Site news (e.g. new topic in the handbook)
+    - Community news
+    - Featured hack
+    - Trending hacks
+  - Bottom
+    - About us
+    - etc.
+- Magazine
+- Handbook
+- Community
+- Search Page
+  - central entry point to the hack storage
+  - rich filter feature
+- Hack Page
+- Profile/Preferences
+- Bookmarks
