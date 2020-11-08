@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[8],{fnu2:function(n,u,o){"use strict";o.r(u),o.d(u,"default",(function(){return t}));var e=o("FdF9").default.createElement;function t(){return e("main",null,e("h1",null,"Handbook"))}},ugej:function(n,u,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/handbook",function(){return o("fnu2")}])}},[["ugej",0,1]]]);

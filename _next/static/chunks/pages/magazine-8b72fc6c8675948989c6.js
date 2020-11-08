@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[10],{"0OGX":function(n,u,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/magazine",function(){return e("5Xb1")}])},"5Xb1":function(n,u,e){"use strict";e.r(u),e.d(u,"default",(function(){return i}));var t=e("FdF9").default.createElement;function i(){return t("main",null,t("h1",null,"Magazine"))}}},[["0OGX",0,1]]]);
