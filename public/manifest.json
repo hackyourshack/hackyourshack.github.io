@@ -1,10 +1,10 @@
 {
-  "name": "next-pwa",
-  "short_name": "next-pwa",
+  "name": "Hack Your Shack",
+  "short_name": "Hack Your Shack",
   "display": "standalone",
   "orientation": "portrait",
-  "theme_color": "#FFFFFF",
-  "background_color": "#FFFFFF",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "start_url": "/",
   "icons": [
     {
