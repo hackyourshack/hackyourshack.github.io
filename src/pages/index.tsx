@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="parallax">
       <section
-        className="flex items-center justify-center m-0 bg-cover parallax-bg"
+        className="flex items-center justify-center pt-12 m-0 bg-cover parallax-bg"
         style={{
           backgroundImage:
             "url(images/esteban-castle-FULkoZ989E4-unsplash.jpg)",

@@ -10,11 +10,13 @@
 @import "tailwindcss/utilities";
 /* Stop purging. */
 
-/* Your own custom utilities */
-.btn-blue {
-  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
-}
+/* Start purging... */
+@import "./bg-blur.css";
+/* Stop purging. */
 
-#container {
-  display: none;
+/* Your own custom utilities */
+@layer utilities {
+  .btn-blue {
+    @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
+  }
 }
