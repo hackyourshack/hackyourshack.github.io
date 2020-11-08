@@ -1,6 +1,5 @@
 import { Tag } from "@components/widgets";
 import Logo from "@public/icons/logo.svg";
-import React from "react";
 
 export default function Home() {
   return (
