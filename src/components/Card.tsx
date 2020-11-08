@@ -1,7 +1,7 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 interface CardProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement> {
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   imgSrc?: string;
   imgAlt?: string;
   title?: string;
