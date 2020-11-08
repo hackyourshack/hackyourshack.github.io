@@ -1,4 +1,5 @@
-import { Tag } from "@components/widgets";
+import { Card } from "@components/Card";
+import { Tag } from "@components/Tag";
 import Logo from "@public/icons/logo.svg";
 
 export default function Home() {
@@ -39,41 +40,35 @@ export default function Home() {
             knowledge, extensive tools or expensive building materials, so you
             can get started right away. Have fun!
           </p>
-          <div className="max-w-sm mt-8 overflow-hidden rounded shadow-lg">
-            <img
-              className="w-full"
-              src="images/christin-hume-k2Kcwkandwg-unsplash.jpg"
-              alt="Photo by Christin Hume from Unsplash"
-            />
-            <div className="px-6 py-4">
-              <div className="mb-2 text-xl font-bold">Handbook</div>
-              <p className="text-base text-gray-700">
-                In this category, you will find profound building knowledge –
-                here we will explain basic building techniques and methods for
-                the inexpensive production of building materials and tools.
-              </p>
-              <h3>How to make good Instructions</h3>
-              <p>
-                Here you can soon learn how to create great building
-                instructions for the community yourself. Of course, you will
-                also get to know the tools we provide on the platform.
-              </p>
-            </div>
-          </div>
-          <div className="max-w-sm mt-8 overflow-hidden rounded shadow-lg">
-            <img
-              className="w-full"
-              src="images/james-lewis-C1ubQXTU6-w-unsplash.jpg"
-              alt="Photo by James Lewis from Unsplash"
-            />
-            <div className="px-6 py-4">
-              <div className="mb-2 text-xl font-bold">Hack Storage</div>
-              <p className="text-base text-gray-700">
-                Our <span className="italic">Hack Storage</span> is the growing
-                collection of low-tech building solutions and thus the heart of
-                the platform. Browse around, start building, review and share!
-              </p>
-            </div>
+          <Card
+            className="mt-8 text-base text-gray-700"
+            imgSrc="images/christin-hume-k2Kcwkandwg-unsplash.jpg"
+            imgAlt="Photo by Christin Hume from Unsplash"
+            title="Handbook"
+          >
+            <p className="text-base text-gray-700">
+              In this category, you will find profound building knowledge – here
+              we will explain basic building techniques and methods for the
+              inexpensive production of building materials and tools.
+            </p>
+            <h3>How to make good Instructions</h3>
+            <p>
+              Here you can soon learn how to create great building instructions
+              for the community yourself. Of course, you will also get to know
+              the tools we provide on the platform.
+            </p>
+          </Card>
+          <Card
+            className="mt-8 text-base text-gray-700"
+            imgSrc="images/james-lewis-C1ubQXTU6-w-unsplash.jpg"
+            imgAlt="Photo by James Lewis from Unsplash"
+            title="Hack Storage"
+          >
+            <p>
+              Our <span className="italic">Hack Storage</span> is the growing
+              collection of low-tech building solutions and thus the heart of
+              the platform. Browse around, start building, review and share!
+            </p>
             <div className="px-6 pt-4 pb-2">
               <Tag>Electric Charger</Tag>
               <Tag>Water Station</Tag>
@@ -84,26 +79,22 @@ export default function Home() {
               <Tag>Manual Washing Machine</Tag>
               <Tag>Playground Equipment</Tag>
             </div>
-          </div>
-          <div className="max-w-sm mt-8 overflow-hidden rounded shadow-lg">
-            <img
-              className="w-full"
-              src="images/slim-emcee-jzdOX0XkXr8-unsplash.jpg"
-              alt="Photo by Slim Emcee from Unsplash"
-            />
-            <div className="px-6 py-4">
-              <div className="mb-2 text-xl font-bold">Events</div>
-              <p className="text-base text-gray-700">
-                In this category you will find events like hackathons, expert
-                talks or network events in the future. With these events, we
-                want to create opportunities for virtual and physical exchange
-                and community building - both regionally and worldwide. With
-                regular call for challenges we seek to unlock the creative
-                potential of the community to find better solutions for specific
-                problems.
-              </p>
-            </div>
-          </div>
+          </Card>
+          <Card
+            className="mt-8 text-base text-gray-700"
+            imgSrc="images/slim-emcee-jzdOX0XkXr8-unsplash.jpg"
+            imgAlt="Photo by Slim Emcee from Unsplash"
+            title="Events"
+          >
+            <p>
+              In this category you will find events like hackathons, expert
+              talks or network events in the future. With these events, we want
+              to create opportunities for virtual and physical exchange and
+              community building - both regionally and worldwide. With regular
+              call for challenges we seek to unlock the creative potential of
+              the community to find better solutions for specific problems.
+            </p>
+          </Card>
         </section>
         <section className="p-10 pb-16 text-white bg-accent-1">
           <h3>About Us</h3>
