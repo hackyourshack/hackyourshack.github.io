@@ -47,12 +47,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           started right away. Have fun!
         </p>
         <Card
-          className="mt-8 text-base text-gray-700"
+          className="mt-8 text-base text-accent-1"
           imgSrc="images/christin-hume-k2Kcwkandwg-unsplash.jpg"
           imgAlt="Photo by Christin Hume from Unsplash"
           title="Handbook"
         >
-          <p className="text-base text-gray-700">
+          <p className="text-base text-accent-1">
             In this category, you will find profound building knowledge – here
             we will explain basic building techniques and methods for the
             inexpensive production of building materials and tools.
@@ -65,7 +65,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           </p>
         </Card>
         <Card
-          className="mt-8 text-base text-gray-700"
+          className="mt-8 text-base text-accent-1"
           imgSrc="images/james-lewis-C1ubQXTU6-w-unsplash.jpg"
           imgAlt="Photo by James Lewis from Unsplash"
           title="Hack Storage"
@@ -76,18 +76,18 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             platform. Browse around, start building, review and share!
           </p>
           <div className="px-6 pt-4 pb-2">
-            <Tag>Electric Charger</Tag>
-            <Tag>Water Station</Tag>
-            <Tag>Water Heater</Tag>
-            <Tag>Shower</Tag>
-            <Tag>Dehumidifier</Tag>
-            <Tag>Stoves</Tag>
-            <Tag>Manual Washing Machine</Tag>
-            <Tag>Playground Equipment</Tag>
+            <Tag className="text-gray-600">Electric Charger</Tag>
+            <Tag className="text-gray-600">Water Station</Tag>
+            <Tag className="text-gray-600">Water Heater</Tag>
+            <Tag className="text-gray-600">Shower</Tag>
+            <Tag className="text-gray-600">Dehumidifier</Tag>
+            <Tag className="text-gray-600">Stoves</Tag>
+            <Tag className="text-gray-600">Manual Washing Machine</Tag>
+            <Tag className="text-gray-600">Playground Equipment</Tag>
           </div>
         </Card>
         <Card
-          className="mt-8 text-base text-gray-700"
+          className="mt-8 text-base text-accent-1"
           imgSrc="images/slim-emcee-jzdOX0XkXr8-unsplash.jpg"
           imgAlt="Photo by Slim Emcee from Unsplash"
           title="Events"

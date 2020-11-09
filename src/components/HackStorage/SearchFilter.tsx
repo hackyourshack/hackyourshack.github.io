@@ -1,7 +1,6 @@
 // Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
+import BadgeIcon from "@public/icons/medal.svg";
 import StarIcon from "@public/icons/star.svg";
-import BadgeIcon from "@public/icons/badge.svg";
-
 import { DetailedHTMLProps, HTMLAttributes, useState } from "react";
 
 interface SearchFilterProps
@@ -9,14 +8,14 @@ interface SearchFilterProps
 
 export const SearchFilter: React.FC<SearchFilterProps> = ({ className }) => (
   <div className={`mt-4 flex flex-row ${className}`}>
-    <StarFilter stars={3} />
     <ApprovedFilter />
+    <StarFilter />
   </div>
 );
 
 interface StarFilterProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-  stars: number;
+  stars?: number;
 }
 
 export const StarFilter: React.FC<StarFilterProps> = ({
@@ -58,7 +57,7 @@ export const ApprovedFilter: React.FC<ApprovedFilterProps> = ({
 }) => {
   const [on, setOn] = useState(false);
   return (
-    <div className={`pl-6 ${className}`}>
+    <div className={`pr-6 ${className}`}>
       <BadgeIcon
         fill={on ? "orange" : "white"}
         onClick={() => setOn((current) => !current)}
