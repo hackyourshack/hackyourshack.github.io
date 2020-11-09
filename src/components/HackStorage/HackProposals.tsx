@@ -19,7 +19,8 @@ export const HackProposals: React.FC<HackProposalsProps> = ({ className }) => {
       <h1 className="text-2xl font-bold text-accent-1">Editor's Choice</h1>
       <HackCard
         className="mt-2 text-base text-accent-1"
-        imgSrc="images/hack-001/title.jpg"
+        href="hack/001"
+        imgSrc="hacks/001/title.jpg"
         title="Plastic Bottle Cutter"
         stars={5}
         approved={true}
@@ -34,7 +35,8 @@ export const HackProposals: React.FC<HackProposalsProps> = ({ className }) => {
       </h1>
       <HackCard
         className="mt-2 text-base text-accent-1"
-        imgSrc="images/hack-003/title.jpg"
+        href="003"
+        imgSrc="hacks/003/title.jpg"
         title="Grey Water Tower"
         stars={4}
         approved={true}
@@ -44,15 +46,15 @@ export const HackProposals: React.FC<HackProposalsProps> = ({ className }) => {
       <h1 className="mt-8 text-2xl font-bold text-accent-1">Latest Addition</h1>
       <HackCard
         className="mt-2 text-base text-accent-1"
-        imgSrc="images/hack-002/title.jpg"
+        href="002"
+        imgSrc="hacks/002/title.jpg"
         title="Working Ram"
         stars={2}
         approved={false}
       >
         <p>
           Easy to build and very stable working ram, made out of PET ropes
-          produced with the{" "}
-          <Link href="hacks/hack-001">Plastic Bottle Cutter</Link>
+          produced with the <Link href="hack/001">Plastic Bottle Cutter</Link>
         </p>
       </HackCard>
     </section>
