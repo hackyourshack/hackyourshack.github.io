@@ -1,3 +1,4 @@
+// Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
 import { Teleport } from "@components/Teleport";
 import "@styles/index.css";
 import "@styles/parallax.css";

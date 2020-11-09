@@ -1,3 +1,4 @@
+// Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 interface CardProps
@@ -9,10 +10,10 @@ interface CardProps
 
 export const Card: React.FC<CardProps> = ({
   className,
+  children,
   imgSrc,
   imgAlt,
-  title,
-  children
+  title
 }) => (
   <div className={`max-w-sm overflow-hidden shadow-lg ${className}`}>
     {!!imgSrc && <img className="w-full" src={imgSrc} alt={imgAlt} />}

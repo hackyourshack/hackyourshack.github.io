@@ -1,7 +1,6 @@
-export default function SignIn() {
-  return (
-    <main>
-      <h1>Sign In</h1>
-    </main>
-  );
+// Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
+import { SignIn } from "@components/SignIn/SignIn";
+
+export default function () {
+  return <SignIn />;
 }
