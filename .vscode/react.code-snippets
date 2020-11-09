@@ -2,14 +2,23 @@
   "React.FC<Props>": {
     "prefix": "React.FC<Props>",
     "body": [
+      "// Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]",
       "import { DetailedHTMLProps, HTMLAttributes } from \"react\";",
       "",
       "interface ${1:${TM_FILENAME_BASE}}Props",
       "  extends DetailedHTMLProps<HTMLAttributes<HTML${2:Div}Element>, HTML${2}Element> {}",
       "",
-      "export const ${1:${TM_FILENAME_BASE}}: React.FC<${1:${TM_FILENAME_BASE}}Props> = ({ className, children }) => (",
-      "  <${2/(.*)/${1:/downcase}/} className={`$0\\${className\\}`}>{children}</${2/(.*)/${1:/downcase}/}>",
-      ");",
+      "export const ${1:${TM_FILENAME_BASE}}: React.FC<${1:${TM_FILENAME_BASE}}Props> = ({",
+      "  className,",
+      "  children",
+      "}) => {",
+      "  return (",
+      "    <${2/(.*)/${1:/downcase}/} className={`\\${className\\}`}>",
+      "      $0",
+      "      {children}",
+      "    </${2/(.*)/${1:/downcase}/}>",
+      "  );",
+      "};",
       ""
     ],
     "scope": "typescriptreact"
