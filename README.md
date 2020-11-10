@@ -1,8 +1,7 @@
 # Integrated Next.js platform
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
-using [Preact](https://github.com/preactjs/preact) instead of React.
+[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 integrated with the following features:
 
@@ -15,7 +14,7 @@ To re-produce the project follow these steps:
 ## Initialization
 
 ```bash
-yarn create next-app --example using-preact using-preact-app
+yarn create next-app
 ```
 
 ## ´/src´ Folder
