@@ -1,7 +1,9 @@
 // Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
 import { Card } from "@components/Card";
 import { Tag } from "@components/Tag";
+import { SpanProps } from "@components/typography";
 import Logo from "@public/icons/logo.svg";
+import PodcastIcon from "@public/icons/podcast.svg";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 interface LandingPageProps
@@ -29,22 +31,16 @@ export const LandingPage: React.FC<LandingPageProps> = ({
     <div className="bg-white parallax-fg">
       <section className="px-8 pt-2 pb-8">
         <h2 className="mt-0 mb-4 text-xl text-center">
-          What are you Making today?
+          What are you <span className="font-medium">making</span> today?
         </h2>
         <p>
-          Make meaningful things and improve your home. If you can makedo, you
-          won't need neither many resources nor special tools. You might well
-          find all you need on the street, because some one-eyed people consider
-          it useless.
+          <span className="italic">Hack Your Shack</span> is the platform for
+          low-tech solutions.
         </p>
         <p>
-          Hack Your Shack is the platform for low-tech solutions. Here you can
-          learn how to build a solar oven, a grey water tower, a plastic bottle
-          cutter or even a whole shack and share your own creative solutions
-          with other people around the world. What makes Hack Your Shack so
-          special is that the provided hacks do not require any prior knowledge,
-          extensive tools or expensive building materials, so you can get
-          started right away. Have fun!
+          Learn how to improve your home, grow your food and enhance your
+          neighbourhood! Share your own creative solutions with people around
+          the world!
         </p>
         <Card
           className="mt-8 text-base text-accent-1"
@@ -53,74 +49,111 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           title="Hack Storage"
           href="/hack-storage"
         >
-          <p>
-            Our <span className="italic">Hack Storage</span> is the growing
-            collection of low-tech building solutions and thus the heart of the
-            platform. Browse around, start building, review and share!
-          </p>
-          <div className="px-6 pt-4 pb-2">
-            <Tag className="text-gray-600">Electric Charger</Tag>
-            <Tag className="text-gray-600">Water Station</Tag>
-            <Tag className="text-gray-600">Water Heater</Tag>
-            <Tag className="text-gray-600">Shower</Tag>
-            <Tag className="text-gray-600">Dehumidifier</Tag>
-            <Tag className="text-gray-600">Stoves</Tag>
-            <Tag className="text-gray-600">Manual Washing Machine</Tag>
-            <Tag className="text-gray-600">Playground Equipment</Tag>
+          <p>Get inspired, start building, review and share!</p>
+          <div className="pt-4 pb-2">
+            <Tag className="text-gray-100 bg-gray-600">Water Station</Tag>
+            <Tag className="text-gray-100 bg-gray-600">Shower</Tag>
+            <Tag className="text-gray-100 bg-gray-600">Stoves</Tag>
+            <Tag className="text-gray-100 bg-gray-600">Water Heater</Tag>
+            <Tag className="text-gray-100 bg-gray-600">Electric Charger</Tag>
+            <Tag className="text-gray-100 bg-gray-600">Dehumidifier</Tag>
           </div>
         </Card>
         <Card
           className="mt-8 text-base text-accent-1"
           imgSrc="images/gradikaa-aggi-q3TryaToFYo-unsplash.jpg"
           imgAlt="Photo by Gradikaa Aggi on Unsplash"
-          title="Events"
+          title="Community"
           href="/community"
         >
+          <p>Meet, exchange, and build together!</p>
+          <Tag className="mt-2 mb-0 bg-gray-400 text-accent-1">
+            <span className="font-bold">Shackathon!</span> The plastic bottle
+            cutter challenge Build a team, find creative solutions and win!
+          </Tag>
+          <Tag className="mt-2 mb-0 bg-gray-400 text-accent-1">
+            <span className="font-bold">Hack Your Shack Meetup #1</span> Digital
+            expert talks and networking. Get inspired and exchange ideas.
+          </Tag>
+          <Tag className="mt-2 mb-0 bg-gray-400 text-accent-1">
+            <span className="font-bold">Localise!</span> Construction Workshop
+            in <span className="font-semibold">Langa (Cape Town)</span>. Meet
+            like-minded people in your area and learn how to build a compost
+            toilet.
+          </Tag>
+          <h3 className="text-lg font-semibold">Connect</h3>
           <p>
-            In this category you will find events like hackathons, expert talks
-            or network events in the future. With these events, we want to
-            create opportunities for virtual and physical exchange and community
-            building - both regionally and worldwide. With regular call for
-            challenges we seek to unlock the creative potential of the community
-            to find better solutions for specific problems.
+            Find users around the world with similar interests. Be part of our
+            regional groups.
           </p>
         </Card>
         <Card
           className="mt-8 text-base text-accent-1"
-          imgSrc="images/dollar-gill-Kyoshy7BJIQ-unsplash.jpg"
-          imgAlt="Photo by Dollar Gill on Unsplash"
-          title="Handbook"
-          href="/handbook"
+          imgSrc="images/abhijith-s-nair-AvKsX5ZOQnA-unsplash.jpg"
+          imgAlt="Photo by Abhijith S Nair on Unsplash"
+          title="Magazine"
+          href="/magazine"
+        >
+          <p>
+            <Topic>Special</Topic>Building and Fire Protection
+          </p>
+          <p>
+            <Topic>10 Best Hacks</Topic>Secure Your Home
+          </p>
+          <p>
+            <Topic>Hack of the Month</Topic>Zeerpot
+          </p>
+          <p>
+            <Topic>Change Maker</Topic>Nonhlanhla Joye “Stop Hidden Hunger“
+            <PodcastIcon className="inline w-6 h-6 ml-4" fill="#333" />
+            Podcast
+          </p>
+        </Card>
+        <Card
+          className="mt-8 text-base text-accent-1"
+          imgSrc="images/khara-woods--n4Lw7zArIk-unsplash.jpg"
+          imgAlt="Photo by Khara Woods on Unsplash"
+          title="Shack Tech"
+          href="/shack-tech"
         >
           <p className="text-base text-accent-1">
-            In this category, you will find profound building knowledge – here
-            we will explain basic building techniques and methods for the
-            inexpensive production of building materials and tools.
-          </p>
-          <h3>How to make good Instructions</h3>
-          <p>
-            Here you can soon learn how to create great building instructions
-            for the community yourself. Of course, you will also get to know the
-            tools we provide on the platform.
+            Learn more about building techniques, materials, and tools.
           </p>
         </Card>
       </section>
       {children}
       <section className="px-10 pt-6 pb-24 text-white bg-accent-1">
         <h2 className="mt-0 mb-4 text-xl">About Us</h2>
+        <h3 className="mt-4 font-semibold">Our Mission</h3>
         <p>
           Around one billion people worldwide live in slums, and the trend is
-          rising. So far, however, no platform addresses the challenges of
-          people who live in an environment with little infrastructure and few
-          resources (money, building materials, tools). Hack Your Shack wants to
-          change this and make existing knowledge accessible and expand it as
-          empowerment for all. Hack Your Shack consists of an enthusiastic and
-          dedicated team and is a non-profit organization in formation. Do you
-          want to support our mission? We are looking for sponsors, content
-          partners and multipliers.
+          rising. However, no platform addresses the challenges of people who
+          live in an environment with little infrastructure and few resources.
         </p>
-        <p className="mt-6">Hack Your Shack (Berlin)</p>
+        <p>
+          Hack Your Shack wants to change this and make existing knowledge
+          accessible and expand it as empowerment for all.
+        </p>
+        <h3 className="mt-4 font-semibold">Team and Organisation</h3>
+        <p>
+          Hack Your Shack consists of an enthusiastic and dedicated team and is
+          a non-profit organization in formation.
+        </p>
+        <h3 className="mt-4 font-semibold">Partners</h3>
+        <p>
+          Do you want to support our mission? We are looking for sponsors,
+          content partners and multipliers.
+        </p>
+        <p className="mt-6">©️ Hack Your Shack</p>
       </section>
     </div>
   </main>
 );
+
+const Topic: React.FC<SpanProps> = ({ className, children }) => {
+  return (
+    <span className={`mr-2 font-serif font-semibold ${className}`}>
+      {children}
+    </span>
+  );
+};

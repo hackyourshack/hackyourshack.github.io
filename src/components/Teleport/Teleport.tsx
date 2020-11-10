@@ -30,7 +30,7 @@ export const Teleport: React.FC<Props> = ({ className, ...props }) => {
         } absolute bottom-0 right-0 z-10 w-full pt-8 pb-24 pl-40 text-xl bg-blur-3-light text-accent-1`}
       >
         <TeleportEntry href="/sign-in">Sign In</TeleportEntry>
-        <TeleportEntry href="/handbook">Handbook</TeleportEntry>
+        <TeleportEntry href="/shack-tech">Shack Tech</TeleportEntry>
         <TeleportEntry href="/magazine">Magazine</TeleportEntry>
         <TeleportEntry href="/community">Community</TeleportEntry>
         <TeleportEntry href="/hack-storage">Hack Storage</TeleportEntry>

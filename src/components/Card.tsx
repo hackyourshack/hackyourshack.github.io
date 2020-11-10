@@ -21,12 +21,17 @@ export const Card: React.FC<CardProps> = ({
   const content = [];
   if (imgSrc) {
     content.push(
-      <img className="object-cover w-full h-48" src={imgSrc} alt={imgAlt} />
+      <img
+        key="title_image"
+        className="object-cover w-full h-48"
+        src={imgSrc}
+        alt={imgAlt}
+      />
     );
   }
   content.push(
-    <div className="px-6 py-4">
-      {!!title && <div className="mb-2 text-xl font-bold">{title}</div>}
+    <div key="content" className="px-6 py-4">
+      {!!title && <h2 className="mb-2 text-xl font-bold">{title}</h2>}
       {children}
     </div>
   );

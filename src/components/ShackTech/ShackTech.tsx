@@ -5,8 +5,8 @@ import { DetailedHTMLProps, HTMLAttributes } from "react";
 interface HandbookProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {}
 
-export const Handbook: React.FC<HandbookProps> = ({ className, children }) => (
+export const ShackTech: React.FC<HandbookProps> = ({ className, children }) => (
   <main className={`${className}`}>
-    <UnderConstruction title="Handbook" />
+    <UnderConstruction title="Shack Tech" />
   </main>
 );

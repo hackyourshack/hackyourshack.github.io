@@ -25,6 +25,7 @@ export const IconFilter: React.FC<IconFilterProps> = ({
   for (let i = 0; i < size; i++) {
     icons.push(
       <Icon
+        key={`icon_${i + 1}`}
         fill={count > i ? selectedColor : unselectedColor}
         onClick={() => onChangeCount(i + 1)}
       />

@@ -1,4 +1,5 @@
 // Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
+import { EventCard } from "@components/EventCard/EventCard";
 import { UnderConstruction } from "@components/UnderConstruction";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
