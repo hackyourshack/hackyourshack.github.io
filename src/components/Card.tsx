@@ -1,4 +1,5 @@
 // Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
+import Link from "next/link";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 interface CardProps
@@ -6,6 +7,7 @@ interface CardProps
   imgSrc?: string;
   imgAlt?: string;
   title?: string;
+  href?: string;
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -13,13 +15,25 @@ export const Card: React.FC<CardProps> = ({
   children,
   imgSrc,
   imgAlt,
-  title
-}) => (
-  <div className={`max-w-sm overflow-hidden shadow-lg ${className}`}>
-    {!!imgSrc && <img className="w-full" src={imgSrc} alt={imgAlt} />}
+  title,
+  href
+}) => {
+  const content = [];
+  if (imgSrc) {
+    content.push(
+      <img className="object-cover w-full h-48" src={imgSrc} alt={imgAlt} />
+    );
+  }
+  content.push(
     <div className="px-6 py-4">
       {!!title && <div className="mb-2 text-xl font-bold">{title}</div>}
       {children}
     </div>
-  </div>
-);
+  );
+
+  return (
+    <div className={`max-w-sm overflow-hidden shadow-lg ${className}`}>
+      {!!href ? <a href={href}>{content}</a> : content}
+    </div>
+  );
+};

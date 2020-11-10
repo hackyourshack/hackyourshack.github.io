@@ -2,6 +2,7 @@
 import { Card } from "@components/Card";
 import { Tag } from "@components/Tag";
 import Logo from "@public/icons/logo.svg";
+import Link from "next/link";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 interface LandingPageProps
@@ -48,27 +49,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         </p>
         <Card
           className="mt-8 text-base text-accent-1"
-          imgSrc="images/christin-hume-k2Kcwkandwg-unsplash.jpg"
-          imgAlt="Photo by Christin Hume from Unsplash"
-          title="Handbook"
-        >
-          <p className="text-base text-accent-1">
-            In this category, you will find profound building knowledge – here
-            we will explain basic building techniques and methods for the
-            inexpensive production of building materials and tools.
-          </p>
-          <h3>How to make good Instructions</h3>
-          <p>
-            Here you can soon learn how to create great building instructions
-            for the community yourself. Of course, you will also get to know the
-            tools we provide on the platform.
-          </p>
-        </Card>
-        <Card
-          className="mt-8 text-base text-accent-1"
-          imgSrc="images/james-lewis-C1ubQXTU6-w-unsplash.jpg"
-          imgAlt="Photo by James Lewis from Unsplash"
+          imgSrc="images/wade-austin-ellis-g2O9BviWi3M-unsplash.jpg"
+          imgAlt="Photo by Wade Austin on Unsplash"
           title="Hack Storage"
+          href="/hack-storage"
         >
           <p>
             Our <span className="italic">Hack Storage</span> is the growing
@@ -88,9 +72,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         </Card>
         <Card
           className="mt-8 text-base text-accent-1"
-          imgSrc="images/slim-emcee-jzdOX0XkXr8-unsplash.jpg"
-          imgAlt="Photo by Slim Emcee from Unsplash"
+          imgSrc="images/gradikaa-aggi-q3TryaToFYo-unsplash.jpg"
+          imgAlt="Photo by Gradikaa Aggi on Unsplash"
           title="Events"
+          href="/community"
         >
           <p>
             In this category you will find events like hackathons, expert talks
@@ -99,6 +84,25 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             building - both regionally and worldwide. With regular call for
             challenges we seek to unlock the creative potential of the community
             to find better solutions for specific problems.
+          </p>
+        </Card>
+        <Card
+          className="mt-8 text-base text-accent-1"
+          imgSrc="images/dollar-gill-Kyoshy7BJIQ-unsplash.jpg"
+          imgAlt="Photo by Dollar Gill on Unsplash"
+          title="Handbook"
+          href="/handbook"
+        >
+          <p className="text-base text-accent-1">
+            In this category, you will find profound building knowledge – here
+            we will explain basic building techniques and methods for the
+            inexpensive production of building materials and tools.
+          </p>
+          <h3>How to make good Instructions</h3>
+          <p>
+            Here you can soon learn how to create great building instructions
+            for the community yourself. Of course, you will also get to know the
+            tools we provide on the platform.
           </p>
         </Card>
       </section>
