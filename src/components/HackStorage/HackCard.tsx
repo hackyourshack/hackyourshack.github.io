@@ -27,7 +27,7 @@ export const HackCard: React.FC<HackCardProps> = ({
     <div className={`max-w-sm overflow-hidden shadow-lg ${className}`}>
       <img src={imgSrc} className="object-cover object-top w-full h-64" />
       <div className="px-6 py-2">
-        <div className="w-auto flex flex-row ${className">
+        <div className="flex flex-row w-auto">
           {approved && (
             <IconFilter
               className="mr-6"
