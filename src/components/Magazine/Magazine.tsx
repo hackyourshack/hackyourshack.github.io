@@ -1,4 +1,5 @@
 // Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
+import { UnderConstruction } from "@components/UnderConstruction";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 interface MagazineProps
@@ -6,7 +7,6 @@ interface MagazineProps
 
 export const Magazine: React.FC<MagazineProps> = ({ className, children }) => (
   <main className={`${className}`}>
-    <h1>Magazine</h1>
-    {children}
+    <UnderConstruction title="Magazine" />
   </main>
 );

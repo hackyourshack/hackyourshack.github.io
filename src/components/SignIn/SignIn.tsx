@@ -1,4 +1,5 @@
 // Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
+import { UnderConstruction } from "@components/UnderConstruction";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 interface SignInProps
@@ -6,7 +7,6 @@ interface SignInProps
 
 export const SignIn: React.FC<SignInProps> = ({ className, children }) => (
   <main className={`${className}`}>
-    <h1>Sign In</h1>
-    {children}
+    <UnderConstruction title="Sign In" />
   </main>
 );

@@ -2,7 +2,6 @@
 import { Card } from "@components/Card";
 import { Tag } from "@components/Tag";
 import Logo from "@public/icons/logo.svg";
-import Link from "next/link";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 interface LandingPageProps
@@ -107,8 +106,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         </Card>
       </section>
       {children}
-      <section className="p-10 pb-16 text-white bg-accent-1">
-        <h3>About Us</h3>
+      <section className="px-10 pt-6 pb-24 text-white bg-accent-1">
+        <h2 className="mt-0 mb-4 text-xl">About Us</h2>
         <p>
           Around one billion people worldwide live in slums, and the trend is
           rising. So far, however, no platform addresses the challenges of
@@ -120,7 +119,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           want to support our mission? We are looking for sponsors, content
           partners and multipliers.
         </p>
-        <p>Hack Your Shack (Berlin)</p>
+        <p className="mt-6">Hack Your Shack (Berlin)</p>
       </section>
     </div>
   </main>
