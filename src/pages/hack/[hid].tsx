@@ -2,7 +2,7 @@
 import { Hack } from "@components/Hack";
 import { useRouter } from "next/router";
 
-export default function () {
+export default function HackPage() {
   const router = useRouter();
   const { hid } = router.query;
   const hackid = Array.isArray(hid) ? hid[0] : hid || "000";
