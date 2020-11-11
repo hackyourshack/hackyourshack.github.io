@@ -1,11 +1,19 @@
 // Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
 import { IconFilter } from "@components/HackStorage/IconFilter";
+import { Swiper } from "@components/Swiper";
 import { Tag } from "@components/Tag";
 import MedalIcon from "@public/icons/medal.svg";
 import StarIcon from "@public/icons/star.svg";
-import Link from "next/link";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
-import SwipeableViews from "react-swipeable-views";
+
+function loadHack(_hackid: string) {
+  return {
+    title: "Plastic Bottle Cutter",
+    stars: 5,
+    approved: true,
+    titleImg: "/hacks/001/title.jpg"
+  };
+}
 
 interface HackProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
@@ -16,8 +24,8 @@ export const Hack: React.FC<HackProps> = ({ className = "", hackid }) => {
   const { title, approved, stars, titleImg } = loadHack(hackid);
   return (
     <main className={`container flex flex-col h-screen ${className}`}>
-      <h1 className="p-2 text-2xl font-bold text-accent-1">{title}</h1>
-      <SwipeableViews className="">
+      <h1 className="relative p-2 text-2xl font-bold text-accent-1">{title}</h1>
+      <Swiper className="h-full">
         <div>
           <img src={titleImg} className="object-cover object-top w-full h-64" />
           <div className="flex flex-row w-auto mx-4 my-3">
@@ -220,16 +228,7 @@ export const Hack: React.FC<HackProps> = ({ className = "", hackid }) => {
             <Tag className="bg-teal-600">Working Ram</Tag>
           </div>
         </div>
-      </SwipeableViews>
+      </Swiper>
     </main>
   );
 };
-
-function loadHack(hackid: string) {
-  return {
-    title: "Plastic Bottle Cutter",
-    stars: 5,
-    approved: true,
-    titleImg: "/hacks/001/title.jpg"
-  };
-}

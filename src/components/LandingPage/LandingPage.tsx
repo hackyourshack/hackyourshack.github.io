@@ -2,7 +2,6 @@
 import { Card } from "@components/Card";
 import Slip from "@components/Slip";
 import { Tag } from "@components/Tag";
-import { SpanProps } from "@components/typography";
 import Logo from "@public/icons/logo.svg";
 import PodcastIcon from "@public/icons/podcast.svg";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
@@ -70,11 +69,6 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           href="/community"
         >
           <p>Meet, exchange, and build together!</p>
-          <h3 className="my-4 text-lg font-semibold">Connect</h3>
-          <p>
-            Find users around the world with similar interests. Be part of our
-            regional groups.
-          </p>
           <h2 className="my-4 text-lg font-semibold text-accent-1">
             Upcoming Events
           </h2>
@@ -123,39 +117,36 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           title="Magazine"
           href="/magazine"
         >
-          <p>
-            Well researched and easy to understand articles from our editors.
-          </p>
           <h2 className="my-4 text-lg font-semibold text-accent-1">
             Latest Articles
           </h2>
-          <Slip className="h-24">
+          <Slip className="h-32">
             <Slip.Image src="images/dave-hoefler-MrxlMcZxqhY-unsplash.jpg" />
             <Slip.Content>
               <Slip.Subtitle>Special</Slip.Subtitle>
               <Slip.Title>Building and Fire Protection</Slip.Title>
             </Slip.Content>
           </Slip>
-          <Slip className="h-24">
+          <Slip className="h-32">
             <Slip.Image src="images/jason-blackeye-8yYAaguVDgY-unsplash.jpg" />
             <Slip.Content>
               <Slip.Subtitle>10 Best Hacks</Slip.Subtitle>
               <Slip.Title>Secure Your Home</Slip.Title>
             </Slip.Content>
           </Slip>
-          <Slip className="h-24">
+          <Slip className="h-32">
             <Slip.Image src="images/1200px-Zeerpot_version_l_g_re_IMG_6701.jpg" />
             <Slip.Content>
               <Slip.Subtitle>Hack of the Month</Slip.Subtitle>
               <Slip.Title>Zeerpot</Slip.Title>
             </Slip.Content>
           </Slip>
-          <Slip className="h-24">
+          <Slip className="h-32">
             <Slip.Image src="images/nonhlanhlajoye_landscape_2804.jpg__1600x900_q85_crop_subsampling-2.jpg" />
             <Slip.Content>
               <Slip.Subtitle>Change Maker</Slip.Subtitle>
               <Slip.Title>Nonhlanhla Joye</Slip.Title>
-              <Slip.Subtitle>Stop Hidden Hunger</Slip.Subtitle>
+              <p>Stop Hidden Hunger</p>
               <p className="mt-2">
                 <PodcastIcon className="inline w-6 h-6 mr-2" fill="#333" />
                 Podcast
@@ -176,7 +167,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         </Card>
       </section>
       {children}
-      <section className="px-10 pt-6 pb-24 text-white bg-accent-1">
+      <section className="px-10 pt-6 pb-12 text-white bg-accent-1">
         <h2 className="mt-0 mb-4 text-xl">About Us</h2>
         <h3 className="mt-4 font-semibold">Our Mission</h3>
         <p>
@@ -203,11 +194,3 @@ export const LandingPage: React.FC<LandingPageProps> = ({
     </div>
   </main>
 );
-
-const Topic: React.FC<SpanProps> = ({ className, children }) => {
-  return (
-    <span className={`mr-2 font-serif font-semibold ${className}`}>
-      {children}
-    </span>
-  );
-};
