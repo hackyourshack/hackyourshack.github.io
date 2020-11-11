@@ -1,5 +1,6 @@
 // Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
 import { Card } from "@components/Card";
+import Slip from "@components/Slip";
 import { Tag } from "@components/Tag";
 import { SpanProps } from "@components/typography";
 import Logo from "@public/icons/logo.svg";
@@ -29,19 +30,21 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       </div>
     </section>
     <div className="bg-white parallax-fg">
-      <section className="px-8 pt-2 pb-8">
-        <h2 className="mt-0 mb-4 text-xl text-center">
-          What are you <span className="font-medium">making</span> today?
-        </h2>
-        <p>
-          <span className="italic">Hack Your Shack</span> is the platform for
-          low-tech solutions.
-        </p>
-        <p>
-          Learn how to improve your home, grow your food and enhance your
-          neighbourhood! Share your own creative solutions with people around
-          the world!
-        </p>
+      <section className="px-6 pt-2 pb-8">
+        <div className="mx-6">
+          <h2 className="mt-0 mb-4 text-xl text-center">
+            What are you <span className="font-medium">making</span> today?
+          </h2>
+          <p>
+            <span className="italic">Hack Your Shack</span> is the platform for
+            low-tech solutions.
+          </p>
+          <p>
+            Learn how to improve your home, grow your food and enhance your
+            neighbourhood! Share your own creative solutions with people around
+            the world!
+          </p>
+        </div>
         <Card
           className="mt-8 text-base text-accent-1"
           imgSrc="images/wade-austin-ellis-g2O9BviWi3M-unsplash.jpg"
@@ -67,25 +70,51 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           href="/community"
         >
           <p>Meet, exchange, and build together!</p>
-          <Tag className="mt-2 mb-0 bg-gray-400 text-accent-1">
-            <span className="font-bold">Shackathon!</span> The plastic bottle
-            cutter challenge Build a team, find creative solutions and win!
-          </Tag>
-          <Tag className="mt-2 mb-0 bg-gray-400 text-accent-1">
-            <span className="font-bold">Hack Your Shack Meetup #1</span> Digital
-            expert talks and networking. Get inspired and exchange ideas.
-          </Tag>
-          <Tag className="mt-2 mb-0 bg-gray-400 text-accent-1">
-            <span className="font-bold">Localise!</span> Construction Workshop
-            in <span className="font-semibold">Langa (Cape Town)</span>. Meet
-            like-minded people in your area and learn how to build a compost
-            toilet.
-          </Tag>
-          <h3 className="text-lg font-semibold">Connect</h3>
+          <h3 className="my-4 text-lg font-semibold">Connect</h3>
           <p>
             Find users around the world with similar interests. Be part of our
             regional groups.
           </p>
+          <h2 className="my-4 text-lg font-semibold text-accent-1">
+            Upcoming Events
+          </h2>
+
+          <Slip className="h-32">
+            <Slip.Image src="images/UmojaHack-Africa-1-1024x573.jpg" />
+            <Slip.Content>
+              <Slip.Subtitle>Sat, Dec 5 2020, 1pm</Slip.Subtitle>
+              <Slip.Title>Shackathon!</Slip.Title>
+              <Slip.Subtitle>Bottle Cutter Challenge</Slip.Subtitle>
+              <p className="mt-2 leading-4">
+                Build a team, find creative solutions and win!
+              </p>
+            </Slip.Content>
+          </Slip>
+
+          <Slip className="h-32">
+            <Slip.Image src="images/kyle-glenn-nXt5HtLmlgE-unsplash.jpg" />
+            <Slip.Content>
+              <Slip.Subtitle>Sat, Dec 5 2020, 1pm</Slip.Subtitle>
+              <Slip.Title>Global Meetup #1</Slip.Title>
+              <p className="mt-2 leading-4">
+                Digital expert talks and networking. Get inspired and exchange
+                ideas.
+              </p>
+            </Slip.Content>
+          </Slip>
+
+          <Slip className="h-32">
+            <Slip.Image src="images/langa.jpg" />
+            <Slip.Content>
+              <Slip.Subtitle>Sat, Dec 5 2020, 1pm</Slip.Subtitle>
+              <Slip.Title>Localise! Workshop</Slip.Title>
+              <Slip.Subtitle>Langa, Cape Town</Slip.Subtitle>
+              <p className="mt-2 leading-4">
+                Meet like-minded people in your area and learn how to build a
+                compost toilet.
+              </p>
+            </Slip.Content>
+          </Slip>
         </Card>
         <Card
           className="mt-8 text-base text-accent-1"
@@ -95,19 +124,44 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           href="/magazine"
         >
           <p>
-            <Topic>Special</Topic>Building and Fire Protection
+            Well researched and easy to understand articles from our editors.
           </p>
-          <p>
-            <Topic>10 Best Hacks</Topic>Secure Your Home
-          </p>
-          <p>
-            <Topic>Hack of the Month</Topic>Zeerpot
-          </p>
-          <p>
-            <Topic>Change Maker</Topic>Nonhlanhla Joye “Stop Hidden Hunger“
-            <PodcastIcon className="inline w-6 h-6 ml-4" fill="#333" />
-            Podcast
-          </p>
+          <h2 className="my-4 text-lg font-semibold text-accent-1">
+            Latest Articles
+          </h2>
+          <Slip className="h-24">
+            <Slip.Image src="images/dave-hoefler-MrxlMcZxqhY-unsplash.jpg" />
+            <Slip.Content>
+              <Slip.Subtitle>Special</Slip.Subtitle>
+              <Slip.Title>Building and Fire Protection</Slip.Title>
+            </Slip.Content>
+          </Slip>
+          <Slip className="h-24">
+            <Slip.Image src="images/jason-blackeye-8yYAaguVDgY-unsplash.jpg" />
+            <Slip.Content>
+              <Slip.Subtitle>10 Best Hacks</Slip.Subtitle>
+              <Slip.Title>Secure Your Home</Slip.Title>
+            </Slip.Content>
+          </Slip>
+          <Slip className="h-24">
+            <Slip.Image src="images/1200px-Zeerpot_version_l_g_re_IMG_6701.jpg" />
+            <Slip.Content>
+              <Slip.Subtitle>Hack of the Month</Slip.Subtitle>
+              <Slip.Title>Zeerpot</Slip.Title>
+            </Slip.Content>
+          </Slip>
+          <Slip className="h-24">
+            <Slip.Image src="images/nonhlanhlajoye_landscape_2804.jpg__1600x900_q85_crop_subsampling-2.jpg" />
+            <Slip.Content>
+              <Slip.Subtitle>Change Maker</Slip.Subtitle>
+              <Slip.Title>Nonhlanhla Joye</Slip.Title>
+              <Slip.Subtitle>Stop Hidden Hunger</Slip.Subtitle>
+              <p className="mt-2">
+                <PodcastIcon className="inline w-6 h-6 mr-2" fill="#333" />
+                Podcast
+              </p>
+            </Slip.Content>
+          </Slip>
         </Card>
         <Card
           className="mt-8 text-base text-accent-1"

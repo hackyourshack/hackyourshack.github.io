@@ -37,7 +37,7 @@ export const Card: React.FC<CardProps> = ({
   );
 
   return (
-    <div className={`max-w-sm overflow-hidden shadow-lg ${className}`}>
+    <div className={`overflow-hidden shadow-lg ${className}`}>
       {!!href ? <a href={href}>{content}</a> : content}
     </div>
   );
