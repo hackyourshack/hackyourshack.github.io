@@ -1,8 +1,8 @@
 // Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
 import Close from "@public/icons/close.svg";
 import Logo from "@public/icons/logo.svg";
+import Link from "next/link";
 import { DetailedHTMLProps, HTMLAttributes, useState } from "react";
-import { TeleportEntry } from "./TeleportEntry";
 
 interface Props
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
@@ -29,13 +29,24 @@ export const Teleport: React.FC<Props> = ({ className, ...props }) => {
           hidden ? "hidden" : "block"
         } absolute bottom-0 right-0 z-10 w-full pt-8 pb-24 pl-40 text-xl bg-blur-3-light text-accent-1`}
       >
-        <TeleportEntry href="/sign-in">Sign In</TeleportEntry>
-        <TeleportEntry href="/shack-tech">Shack Tech</TeleportEntry>
-        <TeleportEntry href="/magazine">Magazine</TeleportEntry>
-        <TeleportEntry href="/community">Community</TeleportEntry>
-        <TeleportEntry href="/hack-storage">Hack Storage</TeleportEntry>
-        <TeleportEntry href="/">Home</TeleportEntry>
+        <Entry href="/sign-in">Sign In</Entry>
+        <Entry href="/shack-tech">Shack Tech</Entry>
+        <Entry href="/magazine">Magazine</Entry>
+        <Entry href="/community">Community</Entry>
+        <Entry href="/hack-storage">Hack Storage</Entry>
+        <Entry href="/">Home</Entry>
       </ul>
     </div>
   );
 };
+
+interface EntryProps
+  extends DetailedHTMLProps<HTMLAttributes<HTMLLIElement>, HTMLLIElement> {
+  href?: string;
+}
+
+const Entry: React.FC<EntryProps> = ({ className, children, href = "/" }) => (
+  <li className={`py-4 ${className}`}>
+    <Link href={href}>{children}</Link>
+  </li>
+);

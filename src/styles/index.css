@@ -20,3 +20,7 @@
     @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
   }
 }
+
+.react-swipeable-view-container {
+  height: 100%;
+}

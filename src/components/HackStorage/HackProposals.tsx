@@ -9,7 +9,7 @@ interface HackProposalsProps
 
 export const HackProposals: React.FC<HackProposalsProps> = ({ className }) => {
   return (
-    <section className={`p-4 ${className}`}>
+    <section className={className}>
       <h1 className="text-2xl font-bold text-accent-1">Search by Category</h1>
       <div className="mt-2 mb-4">
         <Tag className="text-white bg-blue-500">House Improvement</Tag>

@@ -1,21 +1,24 @@
 // Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
+import { Page } from "@components/Page";
 import Slip from "@components/Slip";
-import { Swiper } from "@components/Swiper";
+import Swiper from "@components/Swiper";
+import { H1, H2 } from "@components/typography";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 interface CommunityProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {}
 
 export const Community: React.FC<CommunityProps> = ({ className }) => (
-  <main className={`container h-screen ${className}`}>
+  <Page className={className}>
     <Swiper>
-      <div className="h-full">
+      <Swiper.Page className="h-screen">
         <img
           className="object-cover w-full h-48"
           src="images/gradikaa-aggi-q3TryaToFYo-unsplash.jpg"
         />
+        <H1 className="hidden">Community Events</H1>
         <div className="px-6 py-4">
-          <H2>Upcoming Events</H2>
+          <H2 className="my-4">Upcoming Events</H2>
           <Slip className="h-32">
             <Slip.Image src="images/UmojaHack-Africa-1-1024x573.jpg" />
             <Slip.Content>
@@ -40,6 +43,7 @@ export const Community: React.FC<CommunityProps> = ({ className }) => (
             </Slip.Content>
           </Slip>
 
+          <H2 className="my-4">Events in Your Neighbourhood</H2>
           <Slip className="h-32">
             <Slip.Image src="images/langa.jpg" />
             <Slip.Content>
@@ -53,27 +57,27 @@ export const Community: React.FC<CommunityProps> = ({ className }) => (
             </Slip.Content>
           </Slip>
         </div>
-      </div>
-      <div>B</div>
-      <div>C</div>
-      <Slip className="h-24">
-        <Slip.Image src="images/khara-woods--n4Lw7zArIk-unsplash.jpg" />
-        <Slip.Content>
-          <Slip.Subtitle>Tue, Nov 17 2020, 8pm</Slip.Subtitle>
-          <Slip.Title>Some Event</Slip.Title>
-          <p>Join us now!</p>
-        </Slip.Content>
-      </Slip>
+      </Swiper.Page>
+      <Swiper.Page>
+        <img
+          className="object-cover w-full h-48"
+          src="images/trevor-cole-CWcAsKuhwy0-unsplash.jpg"
+        />
+        <H1 className="hidden">Community Groups</H1>
+        <div className="px-6 py-4">
+          <H2 className="my-4">Groups in Your Neighbourhood</H2>
+          <Slip className="h-32">
+            <Slip.Image src="images/langa.jpg" />
+            <Slip.Content>
+              <Slip.Title>Loud Langa Ladies</Slip.Title>
+              <Slip.Subtitle>Langa, Cape Town</Slip.Subtitle>
+              <p className="mt-2 leading-4">
+                We are the singing hacksters lady group from Langa.
+              </p>
+            </Slip.Content>
+          </Slip>
+        </div>
+      </Swiper.Page>
     </Swiper>
-  </main>
+  </Page>
 );
-
-export const H2: React.FC<CommunityProps> = ({ className, children }) => {
-  return (
-    <h2
-      className={`mt-4 mb-3 font-semibold text-lg text-accent-1 ${className}`}
-    >
-      {children}
-    </h2>
-  );
-};
