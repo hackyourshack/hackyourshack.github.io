@@ -1,6 +1,4 @@
 // Copyright 2020, Hack Your Shack [https://hackyourshack.github.io]
-import SwipeLeft from "@public/icons/swipe-left.svg";
-import SwipeRight from "@public/icons/swipe-right.svg";
 import React, { DetailedHTMLProps, HTMLAttributes, useState } from "react";
 import SwipeableViews from "react-swipeable-views";
 
@@ -24,10 +22,10 @@ const Swiper: TSwiper = ({ className, children }) => {
             onClick={() => setIndex((current) => Math.max(0, current - 1))}
             aria-label="Previous"
           >
-            <SwipeLeft className="ml-1" fill="#00000044" />
+            <div className="w-1 h-16 ml-1 bg-gray-500 rounded-sm opacity-50" />
           </button>
         )}
-        {index <= size && (
+        {index < size - 1 && (
           <button
             className="z-40 flex items-center w-10 ml-auto focus:outline-none"
             onClick={() =>
@@ -35,7 +33,7 @@ const Swiper: TSwiper = ({ className, children }) => {
             }
             aria-label="Previous"
           >
-            <SwipeRight className="ml-auto mr-1" fill="#00000044" />
+            <div className="w-1 h-16 ml-auto mr-1 bg-gray-500 rounded-sm opacity-50" />
           </button>
         )}
       </div>
@@ -68,18 +66,14 @@ const SwipeIndicator: React.FC<SwipeIndicatorProps> = ({
     segments.push(
       <div
         key={`index_${i}`}
-        className={` flex-1 h-1 ml-px mr-px ${
+        className={` flex-1 h-1 rounded-sm m-1 ${
           i === index ? "bg-gray-400" : "bg-white"
         }`}
       />
     );
   }
 
-  return (
-    <div className={`flex flex-row w-full bg-gray-400 ${className}`}>
-      {segments}
-    </div>
-  );
+  return <div className={`flex flex-row w-full ${className}`}>{segments}</div>;
 };
 
 interface PageProps

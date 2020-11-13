@@ -9,8 +9,8 @@ interface CommunityProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {}
 
 export const Community: React.FC<CommunityProps> = ({ className }) => (
-  <Page className={className}>
-    <Swiper>
+  <Page className={`overflow-hidden ${className}`}>
+    <Swiper className="h-full">
       <Swiper.Page className="h-screen">
         <img
           className="object-cover w-full h-48"

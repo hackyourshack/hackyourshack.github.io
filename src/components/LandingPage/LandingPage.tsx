@@ -46,8 +46,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         </div>
         <Card
           className="mt-8 text-base text-accent-1"
-          imgSrc="images/wade-austin-ellis-g2O9BviWi3M-unsplash.jpg"
-          imgAlt="Photo by Wade Austin on Unsplash"
+          imgSrc="images/national-cancer-institute-S-3AnKlICmY-unsplash.jpg"
+          imgAlt="Photo by National Cancer Institute on Unsplash"
           title="Hack Storage"
           href="/hack-storage"
         >
