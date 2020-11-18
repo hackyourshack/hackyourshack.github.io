@@ -34,7 +34,7 @@ export const Community: React.FC<CommunityProps> = ({ className }) => (
           <Slip className="h-32">
             <Slip.Image src="images/kyle-glenn-nXt5HtLmlgE-unsplash.jpg" />
             <Slip.Content>
-              <Slip.Subtitle>Sat, Dec 5 2020, 1pm</Slip.Subtitle>
+              <Slip.Subtitle>Sat, Dec 12 2020, 1pm</Slip.Subtitle>
               <Slip.Title>Global Meetup #1</Slip.Title>
               <p className="mt-2 leading-4">
                 Digital expert talks and networking. Get inspired and exchange
@@ -47,7 +47,7 @@ export const Community: React.FC<CommunityProps> = ({ className }) => (
           <Slip className="h-32">
             <Slip.Image src="images/langa.jpg" />
             <Slip.Content>
-              <Slip.Subtitle>Sat, Dec 5 2020, 1pm</Slip.Subtitle>
+              <Slip.Subtitle>Fri, Dec 11 2020, 1pm</Slip.Subtitle>
               <Slip.Title>Localise! Workshop</Slip.Title>
               <Slip.Subtitle>Langa, Cape Town</Slip.Subtitle>
               <p className="mt-2 leading-4">

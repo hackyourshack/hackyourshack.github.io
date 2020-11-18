@@ -40,18 +40,18 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           </p>
           <p>
             Learn how to improve your home, grow your food and enhance your
-            neighbourhood! Share your own creative solutions with people around
-            the world!
+            neighbourhood. Share your own creative solutions with people around
+            the world.
           </p>
         </div>
         <Card
           className="mt-8 text-base text-accent-1"
-          imgSrc="images/national-cancer-institute-S-3AnKlICmY-unsplash.jpg"
-          imgAlt="Photo by National Cancer Institute on Unsplash"
+          imgSrc="images/jakayla-toney-KJG509e8R4Y-unsplash.jpg"
+          imgAlt="Photo by Jakayla Toney on Unsplash"
           title="Hack Storage"
           href="/hack-storage"
         >
-          <p>Get inspired, start building, review and share!</p>
+          <p>Get inspired, start building, review and share.</p>
           <div className="pt-4 pb-2">
             <Tag className="text-gray-100 bg-gray-600">Water Station</Tag>
             <Tag className="text-gray-100 bg-gray-600">Shower</Tag>
@@ -68,7 +68,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           title="Community"
           href="/community"
         >
-          <p>Meet, exchange, and build together!</p>
+          <p>Meet, exchange, and build together.</p>
           <h2 className="my-4 text-lg font-semibold text-accent-1">
             Upcoming Events
           </h2>
@@ -88,7 +88,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           <Slip className="h-32">
             <Slip.Image src="images/kyle-glenn-nXt5HtLmlgE-unsplash.jpg" />
             <Slip.Content>
-              <Slip.Subtitle>Sat, Dec 5 2020, 1pm</Slip.Subtitle>
+              <Slip.Subtitle>Sat, Dec 12 2020, 1pm</Slip.Subtitle>
               <Slip.Title>Global Meetup #1</Slip.Title>
               <p className="mt-2 leading-4">
                 Digital expert talks and networking. Get inspired and exchange
@@ -100,7 +100,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           <Slip className="h-32">
             <Slip.Image src="images/langa.jpg" />
             <Slip.Content>
-              <Slip.Subtitle>Sat, Dec 5 2020, 1pm</Slip.Subtitle>
+              <Slip.Subtitle>Fri, Dec 11 2020, 1pm</Slip.Subtitle>
               <Slip.Title>Localise! Workshop</Slip.Title>
               <Slip.Subtitle>Langa, Cape Town</Slip.Subtitle>
               <p className="mt-2 leading-4">
@@ -156,8 +156,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         </Card>
         <Card
           className="mt-8 text-base text-accent-1"
-          imgSrc="images/khara-woods--n4Lw7zArIk-unsplash.jpg"
-          imgAlt="Photo by Khara Woods on Unsplash"
+          imgSrc="images/nasik-lababan-qFWpNWssch0-unsplash.jpg"
+          imgAlt="Photo by Nasik Lababan on Unsplash"
           title="Shack Tech"
           href="/shack-tech"
         >

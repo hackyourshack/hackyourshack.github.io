@@ -89,8 +89,8 @@ export const Hack: React.FC<HackProps> = ({ className = "", hackid }) => {
           </Swiper.Page>
           <Swiper.Page>
             <img
-              src="/hacks/001/katie-rodriguez-NP9kbCXeVK0-unsplash.jpg"
-              className="object-cover object-top w-full h-64"
+              src="/hacks/001/jesse-orrico-L94dWXNKwrY-unsplash.jpg"
+              className="object-cover w-full h-64"
             />
             <div className="mx-8 mt-4">
               <h2 className="p-2 text-xl font-semibold text-accent-1">Tools</h2>
