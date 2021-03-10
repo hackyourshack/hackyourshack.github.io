@@ -107,3 +107,7 @@ module.exports = {
   plugins: []
 };
 ```
+
+## TODO
+
+Add docs for github actions
